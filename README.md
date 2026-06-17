@@ -1,2 +1,3 @@
 # An-Implementation-of-Fourier-Galerkin-Methods-for-Subwavelength-Resonances-in-2D
 It's a small project demonstrating the principles in the attached research paper , In what would be simpler terms it's a use of relatively less computationally expensive BEMs over FEMs to calculate the subwavelength resonant frequencies of an 2D acoustic metamaterial.
+The code uses boundary integral methods and a Fourier–Galerkin reduction developed in the paper to compute subwavelength resonant frequencies of two-dimensional acoustic metamaterials. By working on the resonator boundaries rather than discretizing the entire domain, the approach can be significantly more computationally efficient than traditional finite element methods (FEM) for this class of problems.

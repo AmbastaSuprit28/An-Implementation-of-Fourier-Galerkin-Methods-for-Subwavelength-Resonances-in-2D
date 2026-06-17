@@ -26,7 +26,7 @@ Plot of |ω| vs  δ (Program Vs Paper's Predictions)
 ...
 
 ## Code Structure
-### makecircle.py[makecircle.py](https://github.com/user-attachments/files/29060879/makecircle.py)
+### makecircle.py [makecircle.py](https://github.com/user-attachments/files/29060879/makecircle.py)
 
 generates the boundary coordinates for circular boundary in the 2D metamaterial
 

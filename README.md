@@ -23,3 +23,22 @@ Plot of Complex  Resonance Map
 <img width="2145" height="1638" alt="complex_resonance_map" src="https://github.com/user-attachments/assets/d6804434-d06e-44c9-be13-85a273294f34" />
 Plot of |ω| vs  δ (Program Vs Paper's Predictions)
 <img width="1876" height="1408" alt="delta_scaling" src="https://github.com/user-attachments/assets/81e8d72d-2ff3-49fc-a66e-e8c33dcb9e27" />
+## Program Flow
+
+geometry.txt
+    ↓
+geometry_parser.py
+    ↓
+boundary.py
+    ↓
+operators.py
+    ↓
+fourier.py
+    ↓
+galerkin_projection.py
+    ↓
+reduced_operator.py
+    ↓
+solver.py
+    ↓
+Complex Resonant Frequencies

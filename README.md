@@ -1,4 +1,4 @@
-# An-Implementation-of-Fourier-Galerkin-Methods-for-Subwavelength-Resonances-in-2D
+[operators.py](https://github.com/user-attachments/files/29060939/operators.py)# An-Implementation-of-Fourier-Galerkin-Methods-for-Subwavelength-Resonances-in-2D
 It's a small project demonstrating the principles in the attached research paper , In what would be simpler terms it's a use of relatively less computationally expensive BEMs over FEMs to calculate the subwavelength resonant frequencies of an 2D acoustic metamaterial.
 The code uses boundary integral methods and a Fourier–Galerkin reduction developed in the paper to compute subwavelength resonant frequencies of two-dimensional acoustic metamaterials. By working on the resonator boundaries rather than discretizing the entire domain, the approach can be significantly more computationally efficient than traditional finite element methods (FEM) for this class of problems.
 Disclaimer:Being only familiar with C much of the code was written by AI agents as this project was completed as an independent study of the paper.While I would not have been able to write the entire codebase from scratch, I studied the mathematical framework, directed the implementation, validated the numerical results, and can explain the underlying theory and algorithms used( hopefully 😭).
@@ -26,36 +26,46 @@ Plot of |ω| vs  δ (Program Vs Paper's Predictions)
 ...
 
 ## Code Structure
-### makecircle.py [makecircle.py](https://github.com/user-attachments/files/29060879/makecircle.py)
+### [makecircle.py](https://github.com/user-attachments/files/29060879/makecircle.py)
 
 generates the boundary coordinates for circular boundary in the 2D metamaterial
 
-### makeellipse.py
+### [makeellipse.py](https://github.com/user-attachments/files/29060904/makeellipse.py)
+
 generates the boundary coordinates for elliptical boundary in the 2D metamaterial
 
-### geometry.txt
+### [geometry.txt](https://github.com/user-attachments/files/29060916/geometry.txt)
+
 contains the contrast and coordinates of the Bounded domains of the 2D metamaterial 
 
-### geometry_parser.py
+###[geometry_parser.py](https://github.com/user-attachments/files/29060924/geometry_parser.py)
+
 Reads boundary coordinates from geometry.txt.
 
-### boundary.py
+###[boundary.py](https://github.com/user-attachments/files/29060929/boundary.py)
+
 Computes normals, arc lengths, quadrature weights, area and perimeter.
 
-### operators.py
+###[operators.py](https://github.com/user-attachments/files/29060995/operators.py)
+
 Constructs boundary integral operators using the Helmholtz Green's function.
 
-### fourier.py
+###[fourier.py](https://github.com/user-attachments/files/29060947/fourier.py)
+
 Builds the Fourier basis used in the Galerkin projection.
 
-### galerkin_projection.py
+###[galerkin_projection.py](https://github.com/user-attachments/files/29060953/galerkin_projection.py)
+
 Projects boundary operators onto the Fourier basis.
 
-### reduced_operator.py
+###[reduced_operator.py](https://github.com/user-attachments/files/29060964/reduced_operator.py)
+
 Constructs the effective low-frequency operator Ceff(ω,δ).
 
-### solver.py
+###[solver.py](https://github.com/user-attachments/files/29060981/solver.py)
+
 Computes resonant frequencies by solving Ceff(ω,δ)x = 0.
 
-### main.py
+###[Main1.py](https://github.com/user-attachments/files/29060993/Main1.py)
+
 Driver script that loads geometry, assembles matrices, solves for resonances, and generates plots.

@@ -8,9 +8,9 @@ Link to The very interesting paper by Jinghao Cao(Computing and Mathematical Sci
 USA ( jinghao.cao@caltech.edu)): https://arxiv.org/abs/2605.23251
 
 Some Plots For a quick visualization
-The 2D metamaterial we worked on was 
+The 2D metamaterial we ran the program on
 <img width="1604" height="1638" alt="geometry" src="https://github.com/user-attachments/assets/9f4c7b2b-68f1-4072-8f05-dd684dcda0b2" />
-Plot of Resonance SearcH
+Plot of Resonance Search
 <img width="2105" height="1408" alt="resonance_search" src="https://github.com/user-attachments/assets/248240b9-bcfd-467e-840f-f1a0e1f8eb28" />
 Plot of Complex  Resonance Map
 <img width="2145" height="1638" alt="complex_resonance_map" src="https://github.com/user-attachments/assets/d6804434-d06e-44c9-be13-85a273294f34" />

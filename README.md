@@ -23,22 +23,30 @@ Plot of Complex  Resonance Map
 <img width="2145" height="1638" alt="complex_resonance_map" src="https://github.com/user-attachments/assets/d6804434-d06e-44c9-be13-85a273294f34" />
 Plot of |ω| vs  δ (Program Vs Paper's Predictions)
 <img width="1876" height="1408" alt="delta_scaling" src="https://github.com/user-attachments/assets/81e8d72d-2ff3-49fc-a66e-e8c33dcb9e27" />
-## Program Flow
+...
 
-geometry.txt
-    ↓
-geometry_parser.py
-    ↓
-boundary.py
-    ↓
-operators.py
-    ↓
-fourier.py
-    ↓
-galerkin_projection.py
-    ↓
-reduced_operator.py
-    ↓
-solver.py
-    ↓
-Complex Resonant Frequencies
+## Code Structure
+
+### geometry_parser.py
+Reads boundary coordinates from geometry.txt.
+
+### boundary.py
+Computes normals, arc lengths, quadrature weights, area and perimeter.
+
+### operators.py
+Constructs boundary integral operators using the Helmholtz Green's function.
+
+### fourier.py
+Builds the Fourier basis used in the Galerkin projection.
+
+### galerkin_projection.py
+Projects boundary operators onto the Fourier basis.
+
+### reduced_operator.py
+Constructs the effective low-frequency operator Ceff(ω,δ).
+
+### solver.py
+Computes resonant frequencies by solving Ceff(ω,δ)x = 0.
+
+### main.py
+Driver script that loads geometry, assembles matrices, solves for resonances, and generates plots.

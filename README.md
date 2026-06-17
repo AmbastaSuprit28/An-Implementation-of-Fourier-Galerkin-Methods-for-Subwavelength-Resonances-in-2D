@@ -7,3 +7,12 @@ Truth to be told I Overestimated my abilities when I started reading this paper 
 Link to The very interesting paper by Jinghao Cao(Computing and Mathematical Sciences Department, California Institute of Technology, Pasadena, CA 91125,
 USA ( jinghao.cao@caltech.edu)): https://arxiv.org/abs/2605.23251
 
+Some Plots For a quick visualization
+The 2D metamaterial we worked on was 
+<img width="1604" height="1638" alt="geometry" src="https://github.com/user-attachments/assets/9f4c7b2b-68f1-4072-8f05-dd684dcda0b2" />
+Plot of Resonance SearcH
+<img width="2105" height="1408" alt="resonance_search" src="https://github.com/user-attachments/assets/248240b9-bcfd-467e-840f-f1a0e1f8eb28" />
+Plot of Complex  Resonance Map
+<img width="2145" height="1638" alt="complex_resonance_map" src="https://github.com/user-attachments/assets/d6804434-d06e-44c9-be13-85a273294f34" />
+Plot of |ω| vs  δ (Program Vs Paper's Predictions)
+<img width="1876" height="1408" alt="delta_scaling" src="https://github.com/user-attachments/assets/81e8d72d-2ff3-49fc-a66e-e8c33dcb9e27" />

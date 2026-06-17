@@ -26,6 +26,15 @@ Plot of |ω| vs  δ (Program Vs Paper's Predictions)
 ...
 
 ## Code Structure
+### makecircle.py[makecircle.py](https://github.com/user-attachments/files/29060879/makecircle.py)
+
+generates the boundary coordinates for circular boundary in the 2D metamaterial
+
+### makeellipse.py
+generates the boundary coordinates for elliptical boundary in the 2D metamaterial
+
+### geometry.txt
+contains the contrast and coordinates of the Bounded domains of the 2D metamaterial 
 
 ### geometry_parser.py
 Reads boundary coordinates from geometry.txt.
